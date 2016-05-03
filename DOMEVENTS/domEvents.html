@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dom Events in order</title>
+  <script src="jquery-2.2.3.min.js"></script>
+</head>
+  <body>
+  <form>
+    <input id="text"></input>
+    <input id="txt"></input>
+
+    <script>
+      $("#text").keypress(function(e) {
+        if (e.shiftKey) {
+          console.log("asuhh dude");
+        }
+      })
+      $("#text").keypress(function(e) {
+        console.log(e);
+      })
+    </script>
+  </form>
+  </body>
+</html>
